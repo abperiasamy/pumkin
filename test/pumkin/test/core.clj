@@ -1,6 +1,7 @@
-(ns pumkin.test.core
-  (:use [pumkin.core])
-  (:use [clojure.test]))
+(ns pumkin.core-test
+  (:use clojure.test
+        pumkin.core))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(deftest a-test
+  (testing "FIXME, I fail."
+    (is (= 0 1))))
