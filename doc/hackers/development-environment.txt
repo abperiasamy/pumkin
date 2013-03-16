@@ -1,0 +1,49 @@
+Lein getting started:
+* https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md
+* http://alexott.net/en/clojure/ClojureLein.html
+
+Install Lein
+* Download the lein script from https://raw.github.com/technomancy/leiningen/stable/bin/lein
+* Place it on your $PATH (eg. ~/bin)
+* Set it to be executable. (chmod a+x ~/bin/lein)
+* lein is basically a wrapper/bootstrap shell script. When ever you execute it, it downloads necessary jar dependencies automatically.
+
+Installing Cloure
+* Even though apt or yum repositories distribute Clojure, do not install them. Lein takes care of it automatically.
+* If you run "lein repl", it will download clojure and dependent jar files to ~/.lein and throw a clojure REPL prompt.
+$ lein repl
+=> (clojure-version)
+* If you run "lein repl", from within the source repository, you will get a clojure REPL specific to "pumkin" minimum requirements.
+$ cd git/pumkin
+$ lein repl
+=> (clojure-version)
+
+Configure GNU Emacs to use lein REPL via nrepl 
+Use nrepl emacs package to connect to lien's REPL server.
+
+Add the following lines to your ~/.emacs.d/init.el (or deprecated ~/.emacs).  
+Note 1: If you are still using .emacs, I would recommend "mv ~/.emacs ~/.emacs.d/init.el". Then add the following to init.el. If not emacs will ignore init.el and continue to load .emacs.
+Note 2: Also check to see if you have older package.el related configuration in your init.el. It may conflict with this new configuration. It may be ok to delete them.
+----------------------------------------------------------------------
+(require 'package)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+(package-initialize)
+----------------------------------------------------------------------
+and run
+ M-x package-refresh-contents to load in the package listing.
+ M-x package-install [RET] nrepl [RET]
+
+;; To start Clojure REPL inside Emacs
+ M-x nrepl-jack-in
+ =>
+Note: It make take some time if you are running for the first time. Lein will download dependencies.
+
+Pull pumkin source
+* git clone git@github.com:Pumkin/pumkin.git
+* cd pumkin
+* lein repl
+
+Pumkin Build Environment
+* Take a look at project.clj to get started.
