@@ -1,5 +1,6 @@
-*jar
 .lein-deps-sum
+.lein-repl-history
+*jar
 pom.xml
 *jar
 /.lein-failures

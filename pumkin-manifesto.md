@@ -1,8 +1,8 @@
 # Pumkin Manifesto:
-Managing peta-scale distributed storage is unnecessarily complex and expensive today. Pumkin's goal is to bring down the cost of managing lower than the cost of the storage infrastructure.
+Managing peta-scale distributed storage is unnecessarily complex and expensive today.
 
 ## Description:
-Pumkin is an Internet File Store. It brings the best of existing file services such as ftp, rsync, torrent and git in to one modern self organizing geographically distributed file store. Pumkin is free software, released under Apache license v2.
+Pumkin is an Internet File Store. It brings the best of existing file services such as ftp, rsync, torrent and git in to one modern self managing geographically distributed file store. Pumkin is free software, released under Apache license v2.
 
 ## Design Goals:
 * Simple
