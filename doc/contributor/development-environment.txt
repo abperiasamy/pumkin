@@ -1,7 +1,14 @@
-Git Clone
-=========
-Clone the pumkin source and take a look at project.clj to get started.
-* git clone git@github.com:Pumkin/pumkin.git
+Setting up your Git Fork
+========================
+Fork Pumkin/pumkin repository with the github.com UI. Then clone your repository to your laptop.
+   $ git clone git@github.com:YOURNAME/pumkin.git
+   $ git pull
+
+Receive updates from the upstream:
+   $ git remote add upstream git@github.com:Pumkin/pumkin.git
+   $ git fetch upstream
+   $ git merge upstream
+
 
 Leiningen Basic Docs
 ====================
