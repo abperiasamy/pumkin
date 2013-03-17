@@ -1,4 +1,4 @@
-# GNU Emacs configuration
+# Pumkin development GNU Emacs configuration
 
 This documentation provides two types of development configuration for Emacs.
 
