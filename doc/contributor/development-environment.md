@@ -1,32 +1,43 @@
-Git Clone
-=========
-Clone the pumkin source and take a look at project.clj to get started.
-* git clone git@github.com:Pumkin/pumkin.git
+# How to setup a Pumkin Development environment ?
+This documentation provides details about how to get a development environment
+ready for hacking Pumkin source code.
 
-Leiningen Basic Docs
-====================
+## Clone
+
+Clone the pumkin source and take a look at project.clj to get started.
+
+```
+   $ git clone git@github.com:Pumkin/pumkin.git
+   $ cd pumkin.git
+```
+
+## Leiningen Basic Docs
+
 * https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md
 * http://alexott.net/en/clojure/ClojureLein.html
 
-Install Lein
-============
+## Install Lein
 * Download the lein script from https://raw.github.com/technomancy/leiningen/stable/bin/lein
 * Place it on your $PATH (eg. ~/bin)
 * Set it to be executable. (chmod a+x ~/bin/lein)
 * lein is basically a wrapper/bootstrap shell script. When ever you execute
   it, it downloads necessary jar dependencies automatically.
 
-Install Cloure
-==============
-* Do not install clojure distributed via apt or yum repositories. Lein takes
-  care of it automatically.
+## Install Clojure
+* Do not install clojure distributed via apt or yum repositories. Lein does that
+  automatically.
 * If you run "lein repl", it will download clojure and dependent jar files to
   ~/.lein and throw a clojure REPL prompt.
+
+```
   $ lein repl
   => (clojure-version)
+```
 * If you run "lein repl", from within the pumkin source repository, you will
   get a clojure REPL specific to pumkin'sminimum requirements.
 
+```
   $ cd git/pumkin
   $ lein repl
   => (clojure-version)
+```
