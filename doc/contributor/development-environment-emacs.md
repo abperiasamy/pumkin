@@ -59,7 +59,7 @@ Auto-complete parenthesis, quotes ..
   (add-hook 'nrepl-mode-hook 'paredit-mode)
   (global-set-key [f7] 'paredit-mode)
 ```
-### Clojure repl inside emacs
+### Clojure REPL Inside Emacs
 Install the following packages to integrate emacs with lein's repl and add
 auto-completion capabilities.
 
