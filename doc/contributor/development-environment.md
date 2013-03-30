@@ -7,7 +7,7 @@ Fork Pumkin/pumkin repository with the github.com UI. Then clone your
 repository to your laptop. Upstream is pumkin's official
 repository. Origin is your forked copy at you@github.com. In addition
 you have a working clone on your laptop. Treat origin as your laptop
-backup. Our workflow is similar to [github.com's workflow]
+backup. Pumkin development workflow is similar to [github.com's workflow]
 (http://scottchacon.com/2011/08/31/github-flow.html).
 
 Setup your own repository:
@@ -57,3 +57,7 @@ Send enhancements to upstream:
   $ lein repl
   => (clojure-version)
 ```
+
+## Coding Style
+Follow this [Clojure Style Guide](https://github.com/bbatsov/clojure-style-guide)
+for pumkin development. Please follow coding style and conventions religiously.
